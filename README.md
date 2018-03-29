@@ -20,3 +20,4 @@ Comparing results to human labeled data shows that the methods find cells with s
 ![](https://github.com/Cheer-Lab/Ephys/blob/master/tsnePlxClustEx.PNG)
 
 ![](https://github.com/Cheer-Lab/Ephys/blob/master/tsneMdwtClustEx.PNG)
+ 
