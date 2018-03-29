@@ -1,9 +1,9 @@
 # Ephys
-Files used in various analyses of electrophysiological data. Many include elements that delve into frequency or time-frequency content of signals, acquired from a multitude of methods, such as the Thomson Multitaper PSD, Continuous Wavelet Transform, and Wavelet Coherence among others.
+Files used in various analyses of electrophysiological data. Many include elements that delve into frequency or time-frequency content of signals, acquired from a multitude of methods, such as the Thomson Multitaper PSD, Continuous Wavelet Transform, and Wavelet Coherence among others. Below is an example of time frequency content of a local field potential derived using the continuous wavelet transform. 
 
 ![Continuous Wavelet Transform](https://github.com/Cheer-Lab/Ephys/blob/master/cwtEx.PNG)
 
-Above is an example of time frequency content of a local field potential derived using the continuous wavelet transform. 
+
 
 An interesting element of local field potentials is their relation to each other, often referred to as connectivity. This can be calculated from Granger Causality, Wavelet Coherence, Multiscale Discrete Wavelet Correlation, among many others. A common way to summarize this imformation is within adjacency matrices. These matrices can then be thresholded to show important functional and structural differences within networks. Shown below is an example adjacency matrix and resulting network graph.
 
