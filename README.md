@@ -11,7 +11,7 @@ For spikes, an important step before beginning any analysis is sorting the spike
 
 ![](https://github.com/Cheer-Lab/Ephys/blob/master/spkAvgCells.PNG)
 
-Comparing results to human labeled data shows that the methods find cells with similar results to that of human operators. The main source of error would likely be the splitting of a single cell into two cells. Below are results the human labeled data, followed by the multisignal discrete wavelet transform clustering. These spikes were projected onto a 2-D plane using t-Distributed Stochastic Neighbor Embedding, or t-sne for short. 
+Comparing results to human labeled data shows that the methods find cells with similar results to that of human operators. The main source of error would likely be the splitting of a single cell into two cells. Below are results the human labeled data, followed by the multisignal discrete wavelet transform clustering. These spikes were projected onto a 2-D plane using t-Distributed Stochastic Neighbor Embedding, or t-SNE for short. 
 
 ![](https://github.com/Cheer-Lab/Ephys/blob/master/tsnePlxClustEx.PNG)
 
