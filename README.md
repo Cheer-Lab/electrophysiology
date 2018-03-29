@@ -7,7 +7,7 @@ Above is an example of time frequency content of a local field potential derived
 
 An interesting element of local field potentials is their relation to each other, often referred to as connectivity. This can be calculated from Granger Causality, Wavelet Coherence, Multiscale Discrete Wavelet Correlation, among many others. A common way to summarize this imformation is within adjacency matrices. These matrices can then be thresholded to show important functional and structural differences within networks. Shown below is an example adjacency matrix and resulting network graph.
 
-![](https://github.com/Cheer-Lab/Ephys/blob/master/adjEx.PNG) ![](https://github.com/Cheer-Lab/Ephys/blob/master/netEx.PNG)
+![](https://github.com/Cheer-Lab/Ephys/blob/master/adjEx.PNG) ![](https://github.com/Cheer-Lab/Ephys/blob/master/networkEx.PNG)
 
 For spikes, an important step before beginning any analysis is sorting the spikes into distinct cells. This can be done in a variety of ways. Included here are methods utilizing a k-means algorithm, as well as a multisignal discrete wavelet transform clustering method. A couple examples of cells from these methods are shown below. Followed by the average cells detected on a single wire. These detections still need to be cleaned further, which can be done in a variety of ways, such as best fit, signal to noise ratio, or removing outliers. 
 
