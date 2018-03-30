@@ -5,7 +5,7 @@ Files used in various analyses of electrophysiological data. Many include elemen
 
 
 
-An interesting element of local field potentials is their relation to each other, often referred to as connectivity. This can be calculated from Granger Causality, Wavelet Coherence, Multiscale Discrete Wavelet Correlation, among many others. A common way to summarize this imformation is within adjacency matrices. These matrices can then be thresholded to show important functional and structural differences within networks. Shown below is an example adjacency matrix and resulting network graph.
+An interesting element of local field potentials is their relation to each other, often referred to as connectivity. This can be calculated from Granger Causality, Wavelet Coherence, Multiscale Discrete Wavelet Correlation, among many other methods. A common way to summarize this imformation is within adjacency matrices. These matrices can then be thresholded to show important functional and structural differences within networks. Shown below is an example adjacency matrix and resulting network graph.
 
 ![](https://github.com/Cheer-Lab/Ephys/blob/master/adjEx.PNG) ![](https://github.com/Cheer-Lab/Ephys/blob/master/networkEx.PNG)
 
