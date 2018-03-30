@@ -1,5 +1,5 @@
 function mdwtcr = dwtNetwork ( y )
-    %% Discrete Wavelet Networks 
+    %% Discrete Wavelet Correlation Networks 
     % Takes in a trial of signals and outputs square correlation matrices
     % from each comparison between pairs of channels over frequency levels.
     % Wavelet decompositions are temporally corrected to align any
