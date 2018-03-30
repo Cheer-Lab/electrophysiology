@@ -22,6 +22,7 @@ function sig=dwthht(x)
     % Zlebnik and Carson et al. "Motivational Impairment is accompanied by corticalstriatal dysfunction 
     % in the BACHD-Tg5 rat model of Huntingtons Disease" (2018) (unpublished)
 
+    % Test if filtering is needed
     [pxx,f]=pwelch(x,[],[],1:100,1000);
     indx=find(f==60);
     test=isoutlier(pxx,'movmedian',8); 
@@ -30,6 +31,7 @@ function sig=dwthht(x)
         return
     end
     
+    % Filter signal
     bs60 = designfilt('bandstopiir','FilterOrder',20, ...
              'HalfPowerFrequency1',59.5,'HalfPowerFrequency2',60.5, ...
              'SampleRate',1000,'DesignMethod','butter');
