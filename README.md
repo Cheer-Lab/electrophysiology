@@ -9,7 +9,7 @@ An interesting element of local field potentials is their relation to each other
 
 ![](https://github.com/Cheer-Lab/Ephys/blob/master/adjEx.PNG) ![](https://github.com/Cheer-Lab/Ephys/blob/master/networkEx.PNG)
 
-For spikes, an important step before beginning any analysis is sorting the spikes into distinct cells. This can be done in a variety of ways. Included here are methods utilizing a k-means algorithm, as well as a multisignal discrete wavelet transform clustering method. A couple examples of cells from these methods are shown below. Followed by the average cells detected on a single wire. These detections still need to be cleaned further, which can be done in a variety of ways, such as best fit, signal to noise ratio, or removing outliers. 
+For spikes, an important step before beginning any analysis is sorting the spikes into distinct cells. This can be done in a variety of ways. Included here are methods utilizing a k-means algorithm, as well as a multisignal discrete wavelet transform clustering method. A couple examples of cells from these methods are shown below. Followed by the average cells detected on a single wire. These detections still need to be cleaned further, which can be done in a variety of ways, such as best fit from regression, signal to noise ratio, or removing outliers. 
 
 ![](https://github.com/Cheer-Lab/Ephys/blob/master/spkClustEx.PNG) ![](https://github.com/Cheer-Lab/Ephys/blob/master/spkClustEx2.PNG)
 
