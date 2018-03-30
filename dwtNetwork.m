@@ -19,11 +19,13 @@ function mdwtcr = dwtNetwork ( y )
     % Zlebnik and Carson et al. "Motivational Impairment is accompanied by corticalstriatal dysfunction 
     % in the BACHD-Tg5 rat model of Huntingtons Disease" (2018) (unpublished)
     
+    % Calculate maximal overlap discrete wavelet transform for each channel
     for i = 1:size(y,1)
         mdwt(i,:,:) = modwt(y);
         mdwt(i,:,:) = mdwtmra(squeeze(mdwt(i,:,:)));
     end
     
+    % Compare modwt for every possible connection
     for n = 1:size(y,1)
         for m = 1:size(y,1)
             mdwtcr(n,m,:)=modwtcorr(squeeze(mdwt(n,:,:)),squeeze(mdwt(m,:,:)));
