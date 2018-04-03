@@ -4,7 +4,11 @@ Files used in various analyses of electrophysiological data.
 
 # Local Field Potentials
 
-Many LFP analyses include elements that delve into frequency or time-frequency content of signals, acquired from a multitude of methods, such as the Thomson Multitaper PSD, Continuous Wavelet Transform, and Wavelet Coherence among others. Below is an example of time frequency content of a local field potential derived using the continuous wavelet transform. 
+Many LFP analyses include elements that delve into frequency or time-frequency content of signals, acquired from a multitude of methods, such as the Thomson Multitaper PSD, Continuous Wavelet Transform, and Wavelet Coherence among others. One of the first steps in processing LFPs is filtering out 60Hz noise where necessary. Here a filter is utilized that first decomposes the signal using a discrete wavelet transform, and then ensemble empirical mode decomposition to isolate the contaminated parts of the signal. Finally a butterworth filter is applied, the result of this process is a substantial reduction in 60Hz noise, while leaving the rest of the frequency content unaltered. Below is an example of the result of this filtering process. 
+
+![dwthht filtering](https://github.com/Cheer-Lab/Ephys/blob/master/filtEx.PNG)
+
+Below is an example of time frequency content of a local field potential derived using the continuous wavelet transform. 
 
 ![Continuous Wavelet Transform](https://github.com/Cheer-Lab/Ephys/blob/master/cwtEx.PNG)
 
