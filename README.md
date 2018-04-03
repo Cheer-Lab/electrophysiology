@@ -8,7 +8,7 @@ Many LFP analyses include elements that delve into frequency or time-frequency c
 
 ![dwthht filtering](https://github.com/Cheer-Lab/Ephys/blob/master/filtEx.PNG)
 
-Below is an example of time frequency content of a local field potential derived using the continuous wavelet transform. 
+After noise is removed, analyses can begin. One of which is investigating the time-frequency content of LFPs. This can be done through a Short Time Fourier Transform (STFT) which is a fixed window fourier transform, or via a Continuous Wavelet Transform which utilizes adaptive windowing for a more detailed representation of time-frequency content.  Below is an example of time frequency content of a local field potential derived using the continuous wavelet transform. 
 
 ![Continuous Wavelet Transform](https://github.com/Cheer-Lab/Ephys/blob/master/cwtEx.PNG)
 
