@@ -1,10 +1,13 @@
 function efmeas = networkMeasures(networks,groupVar1,groupVar2,rng1,rng2)
 %% Network Measure Calculation
-% Calculates efficiency measures from networks ove various regions provided
+% Calculates efficiency measures from networks over various regions provided
 % and tests measures for significant differences. Current network
 % measures are average nodal degree, channel range 1 and 2 average
 % degrees, density, and range 1 and 2 rich club coefficients. Density and
-% rich club coefficient calculation require BCT. 
+% rich club coefficient calculation require BCT. Networks are z-scored to
+% the region between the two areas provided, and then a range of thresholds
+% is applied. The resulting measures are the average of the measures over
+% the range of thresholds. 
 %
 % input size: neworks[N M M] double for N subjects with M by M channel matrices
 %             groupVar1(N) char for 1st grouping variable
