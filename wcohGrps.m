@@ -26,6 +26,7 @@ function [owcoh,wcohf] =wcohGrps(dataset,j1,j2)
 lfpeventwcoh=[];
 for i=1:size(dataset,2)
     evs=size(dataset(i).trial,2);
+    lfpeventwcoh=[];
     for m=1:length(j1)
         for k=1:evs
             wcoh=wcoherence(dataset(i).trial{k}(j1(m),:) ,dataset(i).trial{k}(j2(m),:),1000);
