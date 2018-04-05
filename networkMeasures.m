@@ -73,7 +73,7 @@ for i=1:size(efmeas,2)
         p=1;
     end
     if ( p(1) < alph )
-        disp([ 'find from ' measnames{i} ' with groupVar1 p=' num2str(p(1)) ' and age p=' num2str(p(2))])
+        disp([ 'find from ' measnames{i} ' with groupVar1 p=' num2str(p(1)) ' and groupVar2 p=' num2str(p(2))])
     end
 end
 end
