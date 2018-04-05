@@ -1,4 +1,4 @@
-function efmeas = networkMeasures(networks,type,ages,rng1,rng2)
+function efmeas = networkMeasures(networks,groupVar1,groupVar2,rng1,rng2)
 %% Network Measure Calculation
 % Calculates efficiency measures from networks ove various regions provided
 % and tests measures for significant differences. Current network
@@ -6,11 +6,11 @@ function efmeas = networkMeasures(networks,type,ages,rng1,rng2)
 % degrees, density, and range 1 and 2 rich club coefficients. Density and
 % rich club coefficient calculation require BCT. 
 %
-% input size: neworks[N M M] for N subjects with M by M channel matrices
-%             type(N) for 1st grouping variable
-%             ages(N) for 2nd grouping variable
-%             rng1(X) for X chans in 1st area
-%             rng2(Y) for Y chans in 2nd area
+% input size: neworks[N M M] double for N subjects with M by M channel matrices
+%             groupVar1(N) char for 1st grouping variable
+%             groupVar2(N) char for 2nd grouping variable
+%             rng1(X) double for X chans in 1st area
+%             rng2(Y) double for Y chans in 2nd area
 %
 % output size: [N by 6] for N subjects by 6 measures
 %
@@ -67,13 +67,13 @@ alph=0.05;
 ag='362';
 for i=1:size(efmeas,2)
     try
-        p=anovan(squeeze(real(efmeas(:,i))),{type';ages'},'display','off');
+        p=anovan(squeeze(real(efmeas(:,i))),{groupVar1';groupVar2'},'display','off');
     catch
         disp(['missing values for ' measnames{i} ', is BCT installed?'])
         p=1;
     end
     if ( p(1) < alph )
-        disp([ 'find from ' measnames{i} ' with type p=' num2str(p(1)) ' and age p=' num2str(p(2))])
+        disp([ 'find from ' measnames{i} ' with groupVar1 p=' num2str(p(1)) ' and age p=' num2str(p(2))])
     end
 end
 end
